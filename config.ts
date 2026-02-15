@@ -18,7 +18,7 @@ export const APP_CONFIG = {
 
   // Default Admin Credentials
   DEFAULT_ADMIN: {
-    username: 'Hunaruhub',
+    username: 'admin',
     password: 'change-me-now'
   },
 
