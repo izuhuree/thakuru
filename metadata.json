@@ -1,0 +1,8 @@
+{
+  "name": "ތަކުރު",
+  "description": "ދިވެހި ބަހުން ލިއުންތައް ތައްޔާކުރުމަށް ",
+  "homepage": "https://github.com/izuhuree/thakuru",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

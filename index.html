@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="dv" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ތަކުރު | ލިޔުންތެރިކަމުގެ ސްޓޫޑިއޯ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js"></script>
+    <style>
+      @import url('https://fonts.moe.gov.mv/css.css?family=Faruma');
+      
+      :root {
+        --faruma: 'Faruma', sans-serif;
+      }
+
+      body {
+        font-family: var(--faruma);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background-color: #f8fafc;
+      }
+
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #94a3b8;
+      }
+
+      .markdown-content {
+        line-height: 2;
+        font-size: 1.125rem;
+      }
+      .markdown-content ul {
+        list-style-type: disc;
+        padding-right: 1.5rem;
+        margin: 1rem 0;
+      }
+      .markdown-content ol {
+        list-style-type: decimal;
+        padding-right: 1.5rem;
+        margin: 1rem 0;
+      }
+      .markdown-content li { margin-bottom: 0.75rem; }
+      .markdown-content h1, .markdown-content h2, .markdown-content h3 {
+        color: #0f172a;
+        font-weight: 700;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+      }
+      .markdown-content h1 { font-size: 1.75rem; border-bottom: 1px solid #e2e8f0; padding-bottom: 0.5rem; }
+      .markdown-content h2 { font-size: 1.5rem; }
+      .markdown-content h3 { font-size: 1.25rem; }
+      .markdown-content p { margin-bottom: 1.25rem; }
+      
+      .transition-all-custom {
+        transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.28.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="selection:bg-teal-100 selection:text-teal-900">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
